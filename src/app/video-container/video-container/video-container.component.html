@@ -1,0 +1,3 @@
+<video autoplay [muted]="'muted'" loop>
+  <source *ngFor="let source of sources" [src]="source.src" [type]="source.type || getVideoType(source.src)">
+</video>

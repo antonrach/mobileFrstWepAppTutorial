@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VideoSourceObject } from './video-container/video-container/video-container.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'animated-mobile-first';
+
+  videoSources: VideoSourceObject[] = [
+    {
+      src: '/assets/Rammstein_Radio_Premiere_Berlin.mp4'
+    }
+  ];
 }

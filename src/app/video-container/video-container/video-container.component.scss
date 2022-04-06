@@ -1,0 +1,23 @@
+:host {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  margin: 0 auto;
+  background: #ccc;
+  video {
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::-webkit-media-controls {
+       display:none !important;
+    }
+  }
+}
