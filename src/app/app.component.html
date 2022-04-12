@@ -1,1 +1,100 @@
-<app-video-container [sources]="videoSources"></app-video-container>
+<app-header device="Anton's Laptop"></app-header>
+<app-video-carousel [videoItems]="videoItems"></app-video-carousel>
+
+<ng-template #firstSlideInfo>
+  <div class="slide-info">
+    <img src="/assets/images/Microsoft-Teams-Logo-700x394.png" alt="Teams" class="slide-logo" @logoAnimation>
+    <p class="slide-schedule" @fromHeightZeroTopToBottom>9:30 - 10:00 AM</p>
+    <h3 class="slide-title no-mb">
+      <span @riseFromAbove1>Dev Team:</span>
+    </h3>
+    <h3 class="slide-title">
+      <span @riseFromAbove2>Daily stand up</span>
+    </h3>
+    <button
+      type="button"
+      class="slide-button"
+      (click)="joinTeams($event)"
+    >Join</button>
+  </div>
+</ng-template>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>

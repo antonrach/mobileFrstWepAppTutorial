@@ -1,0 +1,28 @@
+.static-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .video-carousel-container {
+    .video-carousel-content {
+      display: flex;
+      height: 100%;
+      .video-carousel-item {
+        width: 100%;
+        display: block;
+        height: 100%;
+        transition: opacity 1s;
+        opacity: 0;
+        &.visible {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.transform-prev {
+  transform: translateX(100%);
+}
+.tranform-next {
+  transform: translateX(-100%);
+}

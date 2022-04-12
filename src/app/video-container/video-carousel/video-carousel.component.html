@@ -1,0 +1,53 @@
+<div class="static-container"
+  [ngStyle]="{'height': staticContainerHeight + 'px'}"
+>
+  <div
+    class="video-carousel-container"
+    [ngStyle]="{'height': videoContainerHeight + 'px'}"
+    #videoCarouselContainer
+  >
+    <ngx-hm-carousel
+      class="carousel"
+      [infinite]="true"
+      [data]="videoItems"
+      [(ngModel)]="currentVideoIndex"
+      [disable-drag]="true"
+    >
+      <section
+        ngx-hm-carousel-container
+        class="video-carousel-content"
+      >
+        <article
+          class="video-carousel-item"
+          (click)="switchVideo()"
+          (swipeleft)="switchVideo()"
+          (swiperight)="switchVideo(false)"
+          ngx-hm-carousel-item
+          *ngFor="let item of videoItems; let i = index"
+          [ngClass]="{
+            'visible': currentVideoIndex === i,
+            'transform-prev': currentVideoIndex - 1 === i && isGoingNext,
+            'tranform-next': currentVideoIndex + 1 === i && isGoingPrev
+          }"
+          [ngStyle]="{
+            'transform': translateElement(i)
+          }"
+        >
+          <app-video-container [sources]="item.sources"></app-video-container>
+          <ng-container *ngTemplateOutlet="item.additionalTemplate || null; context: { index: i, currentVideoIndex: currentVideoIndex }"></ng-container>
+        </article>
+        <ng-template #infiniteContainer></ng-template>
+
+        <ng-template #carouselContent let-item let-i="index">
+          <article
+            class="video-carousel-item"
+            [ngClass]="{'visible': currentVideoIndex === i}"
+            (click)="switchVideo()"
+          >
+            <app-video-container [sources]="item?.sources || []"></app-video-container>
+          </article>
+        </ng-template>
+      </section>
+    </ngx-hm-carousel>
+  </div>
+</div>

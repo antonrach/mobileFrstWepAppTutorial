@@ -1,0 +1,18 @@
+<header>
+  <div class="header-row" @fallDown>
+    <div class="header-info">
+      <svg width="30" height="30" class="logo">
+        <rect width="30" height="30" style="fill:white" />
+      </svg>
+      <div class="connection-info">
+        <p class="connected-to" @fallDownDelayed>Connected to</p>
+        <p>{{device}}</p>
+      </div>
+    </div>
+    <div class="tools">
+      <mat-icon>keyboard_tab</mat-icon>
+      <mat-icon>change_history</mat-icon>
+      <mat-icon>settings</mat-icon>
+    </div>
+  </div>
+</header>
