@@ -1,0 +1,14 @@
+$transition_time: .3s;
+
+.transition {
+  transition: all $transition_time ease-in-out;
+}
+
+.carousel {
+  .content {
+    display: flex;
+    .item {
+      display: block;
+    }
+  }
+}

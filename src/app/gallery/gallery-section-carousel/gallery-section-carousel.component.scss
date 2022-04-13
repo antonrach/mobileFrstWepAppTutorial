@@ -1,0 +1,23 @@
+$transition_time: .3s;
+
+.transition {
+  transition: all $transition_time ease-in-out;
+}
+
+.carousel {
+  .content {
+    display: flex;
+    .item {
+      display: block;
+    }
+  }
+}
+
+.gallery-section {
+  display: flex;
+  width: 300px;
+  img.gallery-section-logo {
+    margin-right: 10px;
+    height: 30px;
+  }
+}

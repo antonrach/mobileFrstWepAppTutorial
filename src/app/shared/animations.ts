@@ -65,3 +65,18 @@ export const riseFromAboveAnimation2 = trigger('riseFromAbove2', [
     ])),
   ]),
 ]);
+
+export const swipeAnimation1 = trigger('swipeAnimation1', [
+  transition(':leave', [
+    style({ transform: 'translateX(0)' }),
+    animate(300, style({ transform: 'translateX(-50%)' })),
+  ]),
+]);
+
+export const swipeAnimation2 = trigger('swipeAnimation2', [
+  transition(':leave', [
+    style({ transform: 'translateX(0)' }),
+    animate(500, style({ transform: 'translateX(-50%)' })),
+  ]),
+]);
+

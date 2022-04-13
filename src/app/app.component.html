@@ -1,15 +1,27 @@
 <app-header device="Anton's Laptop"></app-header>
 <app-video-carousel [videoItems]="videoItems"></app-video-carousel>
 
-<ng-template #firstSlideInfo>
+<ng-template
+  #firstSlideInfo
+  let-index="index"
+  let-currentVideoIndex="currentVideoIndex"
+  let-additionalTemplateAnimation="additionalTemplateAnimation"
+>
   <div class="slide-info">
-    <img src="/assets/images/Microsoft-Teams-Logo-700x394.png" alt="Teams" class="slide-logo" @logoAnimation>
-    <p class="slide-schedule" @fromHeightZeroTopToBottom>9:30 - 10:00 AM</p>
+    <img
+      src="/assets/images/Microsoft-Teams-Logo-700x394.png"
+      alt="Teams"
+      class="slide-logo"
+      @logoAnimation
+      @swipeAnimation2
+      *ngIf="index === currentVideoIndex"
+    >
+    <p class="slide-schedule" @fromHeightZeroTopToBottom @swipeAnimation2 *ngIf="index === currentVideoIndex">9:30 - 10:00 AM</p>
     <h3 class="slide-title no-mb">
-      <span @riseFromAbove1>Dev Team:</span>
+      <span @riseFromAbove1 @swipeAnimation1 *ngIf="index === currentVideoIndex">Dev Team:</span>
     </h3>
     <h3 class="slide-title">
-      <span @riseFromAbove2>Daily stand up</span>
+      <span @riseFromAbove2 @swipeAnimation1 *ngIf="index === currentVideoIndex">Daily stand up</span>
     </h3>
     <button
       type="button"
@@ -18,6 +30,17 @@
     >Join</button>
   </div>
 </ng-template>
+
+<div [ngStyle]="{height: '40px'}"></div>
+<div class="main-container">
+  <app-gallery-carousel [items]="galleryItems" [sections]="gallerySections"></app-gallery-carousel>
+</div>
+
+<!-- <app-gallery-item
+  imgSrc="/assets/images/20220328-101015_rammsteinzeitstdcda3dpsrplus.jpg"
+  title="Rammstein - Zeit"
+  shortDescription="Listen to a new album!"
+></app-gallery-item> -->
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non hic qui repellat sed in neque unde nam dolore. Quis omnis totam enim laborum eos deserunt nisi eaque iste dolorem!</p>

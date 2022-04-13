@@ -36,8 +36,10 @@ export class VideoCarouselComponent implements OnInit, OnDestroy {
   staticContainerHeight: number = 500;
   videoContainerHeight: number = 500;
 
-  debouncedScrollUpdate: EventListenerOrEventListenerObject | undefined;
-  debouncedInit: EventListenerOrEventListenerObject | undefined;
+  additionalTemplateAnimation: string = 'next';
+
+  debouncedScrollUpdate?: EventListenerOrEventListenerObject;
+  debouncedInit?: EventListenerOrEventListenerObject;
 
   ngOnInit(): void {
     if (this.defaultVideoIndex) {
@@ -88,6 +90,7 @@ export class VideoCarouselComponent implements OnInit, OnDestroy {
     if (next) {
       this.isGoingNext = true;
       this.isGoingPrev = false;
+      this.additionalTemplateAnimation = 'next';
       this.videoSwitchTimeout = window.setTimeout(() => {
         this.isGoingNext = false;
       }, 1000)
@@ -102,6 +105,7 @@ export class VideoCarouselComponent implements OnInit, OnDestroy {
 
     this.isGoingPrev = true;
     this.isGoingNext = false;
+    this.additionalTemplateAnimation = 'prev';
     this.videoSwitchTimeout = window.setTimeout(() => {
       this.isGoingPrev = false;
     }, 1000);

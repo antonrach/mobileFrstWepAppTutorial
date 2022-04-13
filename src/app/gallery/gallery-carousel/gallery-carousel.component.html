@@ -1,0 +1,28 @@
+<div #galleryContainer>
+  <app-gallery-section-carousel *ngIf="sections" [items]="sections"></app-gallery-section-carousel>
+  <ngx-hm-carousel
+    class="carousel"
+    [(ngModel)]="currentIndex"
+    align="left"
+    [show-num]="showNum"
+    [drag-many]="true"
+  >
+    <section
+      ngx-hm-carousel-container
+      class="content"
+    >
+      <article
+        ngx-hm-carousel-item
+        *ngFor="let item of items"
+        class="item"
+      >
+        <app-gallery-item
+          [imgSrc]="item.imgSrc"
+          [imgAlt]="item.imgAlt"
+          [title]="item.title"
+          [shortDescription]="item.shortDescription"
+        ></app-gallery-item>
+      </article>
+    </section>
+  </ngx-hm-carousel>
+</div>

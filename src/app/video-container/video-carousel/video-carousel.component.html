@@ -34,7 +34,13 @@
           }"
         >
           <app-video-container [sources]="item.sources"></app-video-container>
-          <ng-container *ngTemplateOutlet="item.additionalTemplate || null; context: { index: i, currentVideoIndex: currentVideoIndex }"></ng-container>
+          <ng-container
+            *ngTemplateOutlet="item.additionalTemplate || null; context: {
+              index: i,
+              currentVideoIndex: currentVideoIndex,
+              animation: additionalTemplateAnimation
+            }"
+          ></ng-container>
         </article>
         <ng-template #infiniteContainer></ng-template>
 

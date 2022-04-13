@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { VideoContainerModule } from './video-container/video-container.module';
+import { GalleryModule } from './gallery/gallery.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { VideoContainerModule } from './video-container/video-container.module';
     MatButtonModule,
     MatIconModule,
     VideoContainerModule,
+    GalleryModule,
   ],
   providers: [
 

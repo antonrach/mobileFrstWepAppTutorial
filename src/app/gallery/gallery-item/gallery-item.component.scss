@@ -1,0 +1,23 @@
+.gallery-item-container {
+  width: 300px;
+  background-color: #363636;
+  padding: 10px 12px;
+  img.cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  h4.title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  p.short-description {
+    color: gray;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+}
